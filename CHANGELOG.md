@@ -9,7 +9,9 @@ This file documents any relevant changes done to ViUR-core since version 3.
 - doc: Fix seo_language_map in docstring
 - feat:  `SpatialBone`  extend `setBoneValue` to accept `dict` with lat/lng aliases (#1705)
 - feat: `CodeBone`, `LogicsBone`, `JinjaBone` and `PythonBone` (#1668)
+- feat: `NumericBone` with decimal-support (#1666)
 - feat: `skel.patch()` with internal-mode default (#1587)
+- feat: Add `AddressBone` (#1712)
 - feat: Add `after_from_client` (#1708)
 - feat: add `contrib` package with `RequestRateLimit` validator (#1690)
 - feat: Add `keys_only`-tooling for `Query` (#1586)
@@ -26,6 +28,7 @@ This file documents any relevant changes done to ViUR-core since version 3.
 - feat: Provide `Email`-module (#1678)
 - feat: Re-Add trace-queries logging (#1642)
 - feat: Refactor and improve `getUniquePropertyIndexValues` (#1681)
+- feat: Replace client-side `MultiQuery` with native Datastore operators (#1700)
 - feat(StringBone): make `escape_html` globally configurable via `conf` (#1706)
 - fix: `BooleanBone` doesn't respect `vfunc/isInvalid` (#1694)
 - fix: `cache.flushCache` code path improvement (#1682)
@@ -40,6 +43,11 @@ This file documents any relevant changes done to ViUR-core since version 3.
 - refactor: Provide and use `_can_access`-function in vi-render (#1659)
 - refactor: Use `db.KeyType` type annotation in several places (#1639)
 - test: Add unit tests for Bones and App Login Flow (get_cookie_for_app, apply_login_cookie) (#1661)
+
+## [3.8.29]
+
+- fix: Normalize parsed `db.Key` to current `project_id` (#1719)
+- fix: `SkelModule.add_or_edit` should use `amend=True` on edit (#1718)
 
 ## [3.8.28]
 
