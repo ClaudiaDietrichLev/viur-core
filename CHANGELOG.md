@@ -44,6 +44,11 @@ This file documents any relevant changes done to ViUR-core since version 3.
 - refactor: Use `db.KeyType` type annotation in several places (#1639)
 - test: Add unit tests for Bones and App Login Flow (get_cookie_for_app, apply_login_cookie) (#1661)
 
+## [3.8.30]
+
+- fix(i18n): Tolerate relative filenames in `add_missing_translation` (#1721)
+- fix(request): allow same-site requests in FetchMetaDataValidator (#1720)
+
 ## [3.8.29]
 
 - fix: Normalize parsed `db.Key` to current `project_id` (#1719)
